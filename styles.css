@@ -1,4 +1,95 @@
 body{
     background-color: #333;
-    font: #eaeaea;
+    color: #eaeaea;
+    font-family: 'poppins', sans-serif;
+    margin: 0 2rem;
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+main{
+    text-align: center;
+}
+
+header{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.navlink{
+    text-decoration: none;
+    color: #e3e3e3;
+    border: #fbb03d solid 1pt;
+    padding: .5rem;
+    border-radius: 3pt;
+    margin-left: .4rem;
+    transition:ease-in-out .2s;
+}
+
+.navlink:hover{
+    text-decoration: none;
+    color: #333;
+    background-color: #fbb03d;
+    padding: .5rem;
+    border-radius: 3pt;
+    
+}
+
+.logo{
+    max-width: 100%;
+    width: 15rem;
+}
+
+.button{
+    text-decoration: none;
+    color: #e3e3e3;
+    border: #fbb03d solid 1pt;
+    padding: .5rem;
+    border-radius: 3pt;
+    transition:ease-in-out .2s;
+}
+
+.button:hover{
+    text-decoration: none;
+    color: #333;
+    background-color: #fbb03d;
+    padding: .5rem;
+    border-radius: 3pt;
+}
+
+.highlight{
+    color: #fbb03d;
+}
+
+.featured{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.featured .product{
+    max-width: 100%;
+    width: 325px;
+    padding: 2rem;
+    border: #fbb03d solid 1px;
+    margin: 2rem 0;
+}
+
+.featured .price{
+    font-family: 'poppins', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    padding: .5rem 0
+}
+
+.bolt{
+    width: 30px;
+    height: 70px;
+    max-width: 100%;
+    padding-right: 1rem;
 }
