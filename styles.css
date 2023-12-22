@@ -91,5 +91,170 @@ header{
     width: 30px;
     height: 70px;
     max-width: 100%;
-    padding-right: 1rem;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+form{
+    background-color: #333;
+    padding: 1rem;
+}
+
+label, input[type=text], [type=email], textarea{
+    display: block;
+    margin: .5rem 0;
+}
+
+input[type=text], [type=email], textarea{
+    width: 95%;
+    padding: .5rem;
+    font-size: 1rem;
+    border: 1px solid transparent;
+}
+
+textarea{
+    height: 7rem;
+    font-family: 'poppins', sans-serif;
+    color: #333;
+}
+
+input:focus[type=text], input:focus[type=email], textarea:focus{
+    outline:none;
+    border: 1px solid #fbb03d;
+}
+
+input[type=submit]{
+    background-color: #333;
+    color:#e3e3e3;
+    padding: .5rem;
+    border: #fbb03d solid 2pt;
+    border-radius: 4pt;
+}
+
+input[type=submit]{
+    font-family: 'poppins', sans-serif;
+    background-color: #333;
+    color:#e3e3e3;
+    padding: .5rem;
+    border: #fbb03d solid 2pt;
+    border-radius: 6pt;
+    transition: ease-in-out .2s;
+}
+
+input[type=submit]:hover{
+    font-family: 'poppins', sans-serif;
+    background-color: #fbb03d;
+    color:#333;
+    padding: .5rem;
+    border-radius: 6pt;
+}
+
+footer{
+    text-align: center;
+    padding: 5rem 0;
+}
+
+@media (min-width: 616px){
+    body{
+        margin: 0 5rem;
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    main{
+        text-align: center;
+    }
+    
+    header{
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .featured{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+    }
+    
+    .featured .product{
+        max-width: 100%;
+        width: 325px;
+        padding: 2rem;
+        border: #fbb03d solid 1px;
+        margin: 2rem 0;
+    }
+    
+    .featured .price{
+        font-family: 'poppins', sans-serif;
+        font-weight: 200;
+        font-style: italic;
+        padding: .5rem 0
+    }
+
+    footer{
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width: 765px){
+    body{
+        margin: 0 5rem;
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    main{
+        text-align: center;
+    }
+    
+    header{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        padding: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .featured{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+    }
+    
+    .featured .product{
+        max-width: 100%;
+        width: 325px;
+        padding: 2rem;
+        border: #fbb03d solid 1px;
+        margin: 2rem 0;
+    }
+    
+    .featured .price{
+        font-family: 'poppins', sans-serif;
+        font-weight: 200;
+        font-style: italic;
+        padding: .5rem 0
+    }
+
+    footer{
+        text-align: center;
+    }
 }
