@@ -13,11 +13,24 @@ main{
 }
 
 header{
-    display:flex;
+    display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
-    padding: 1rem;
-    margin-bottom: 3rem;
+    justify-content:center;      
+}
+
+h1{
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 4rem;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.intro{
+    margin-top: 4rem ;
 }
 
 .navlink{
@@ -40,8 +53,7 @@ header{
 }
 
 .logo{
-    max-width: 100%;
-    width: 15rem;
+    width: 12rem
 }
 
 .button{
@@ -75,7 +87,6 @@ header{
 .featured .product{
     max-width: 100%;
     width: 325px;
-    padding: 2rem;
     border: #fbb03d solid 1px;
     margin: 2rem 0;
 }
@@ -87,21 +98,6 @@ header{
     padding: .5rem 0
 }
 
-.bolt{
-    width: 30px;
-    height: 70px;
-    max-width: 100%;
-}
-
-h1{
-    font-weight: 700;
-    font-size: 40px;
-}
-
-h2{
-    font-weight: 500;
-    font-size: 30px;
-}
 
 form{
     background-color: #333;
@@ -165,7 +161,7 @@ footer{
 @media (min-width: 616px){
     body{
         margin: 0 5rem;
-        display: block;
+        display: inline-block;
         flex-wrap: wrap;
         flex-direction: column;
     }
@@ -174,8 +170,8 @@ footer{
         text-align: center;
     }
     
-    header{
-        display:flex;
+    header nav a{
+        display:inline-block;
         flex-wrap: nowrap;
         justify-content: center;
         padding: 1rem;
@@ -211,10 +207,10 @@ footer{
 
 }
 
-@media (min-width: 765px){
+@media (min-width: 700px){
     body{
         margin: 0 5rem;
-        display: block;
+        display: inline-block;
         flex-wrap: wrap;
         flex-direction: column;
     }
@@ -227,7 +223,7 @@ footer{
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content:space-between;
+        justify-content:center;
         padding: 1rem;
         margin-bottom: 3rem;
     }
@@ -258,3 +254,62 @@ footer{
         text-align: center;
     }
 }
+
+@media (min-width: 800px){
+    body{
+        margin: 0 2rem;
+        display: block;
+    }
+    
+    main{
+        text-align: left;
+        margin: 0 5rem;
+    }
+
+    .intro{
+        text-align: left;
+        margin-right: 34rem;
+    }
+
+    p{
+        text-align: left;
+        margin-right: 50rem;
+    }
+
+    h2{
+        margin-top: 5rem;
+    }
+    
+    header{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        padding: 1rem;
+    }
+
+    .featured{
+        display: grid;
+        grid-template-columns: 500px 500px;
+        gap: 30px;
+        text-align: bottom;
+    }
+    
+    .featured .product{
+        max-width: 100%;
+        width: 400px;
+        border: #fbb03d solid 1px;
+        margin: 0;
+    }
+    
+    .featured .price{
+        font-family: 'poppins', sans-serif;
+        font-weight: 200;
+        font-style: italic;
+        padding: .5rem 0
+    }
+
+    footer{
+        text-align: center;
+    }
+}
+
